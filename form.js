@@ -8,22 +8,41 @@ var firebaseConfig = {
   appId: "1:971873450456:web:3a93ea1a9f3fd372e29aad",
   measurementId: "G-65QH42MRNX"
 };
+
 //const  auth = firebase.auth();
 function signUp(){
   var email = document.getElementById("email");
   var password = document.getElementById("password");
   //const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
   //promise.catch(e => alert(e.message));
+
   alert("Signed Up");
+
+
+  
 }
+
+
 function signIn(){
    var email = document.getElementById("email");
   var password = document.getElementById("password");
   //const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
   //promise.catch(e => alert(e.message));
   alert("Signed In" + email.value);
+  //Take user to a different or home page
 }
 function signOut(){
  // auth.signOut();
   alert("Signed Out");
 }
+//user.onAuthStateChanged(function)(user){
+//if (user){
+  //is signed in
+  //var email = user.email;
+  //alert("Active User" + email);
+
+//}else{
+     // alert("No Active User");
+     //no user signed in
+  // }
+//});
